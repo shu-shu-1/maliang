@@ -162,7 +162,7 @@ Here are some links that may be helpful to you:
 * 📕 Security Policy: [*SECURITY.md*](SECURITY.md)
 * 📗 Contribution Guideline: [*CONTRIBUTING.md*](CONTRIBUTING.md)
 * 📙 Code of Conduct: [*CODE_OF_CONDUCT.md*](CODE_OF_CONDUCT.md)
-* 📚 Tutorials and Documents: [Tutorials & Documents](https://xiaokang2022.github.io/maliang-docs/)
+* 📚 Tutorials and Documents: [Tutorials & Documents](https://xiaokang2022.github.io/maliang-docs/) ([Mirror](https://maliang-docs.netlify.app/))
 * ❤️ Sponsor this Project: [Sponsor](https://xiaokang2022.github.io/maliang/Sponsor/)
 * 🚀 Repository Mirrors:
 [Gitee](https://gitee.com/Xiaokang2022/maliang),

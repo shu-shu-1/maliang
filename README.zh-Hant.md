@@ -162,7 +162,7 @@ pip install maliang[ext]
 * 📕 安全策略: [*SECURITY.md*](SECURITY.md)
 * 📗 貢獻指南: [*CONTRIBUTING.md*](CONTRIBUTING.md)
 * 📙 行爲準則: [*CODE_OF_CONDUCT.md*](CODE_OF_CONDUCT.md)
-* 📚 教程和文檔: [Tutorials & Documents](https://xiaokang2022.github.io/maliang-docs/)
+* 📚 教程和文檔: [Tutorials & Documents](https://xiaokang2022.github.io/maliang-docs/) ([Mirror](https://maliang-docs.netlify.app/))
 * ❤️ 贊助我們: [Sponsor](https://xiaokang2022.github.io/maliang/Sponsor/)
 * 🚀 存儲庫鏡像源:
 [Gitee](https://gitee.com/Xiaokang2022/maliang),
