@@ -7,7 +7,7 @@ icon: material/bookshelf
 
 <div markdown>
 
-!!! example inline "3.0.x"
+!!! success inline "3.0.x"
 
     * Latest version: `3.0.0`
     * Version type: Stable
@@ -27,7 +27,7 @@ icon: material/bookshelf
 
 <div markdown>
 
-!!! success inline "2.6.x"
+!!! failure inline "2.6.x"
 
     * Latest version: `2.6.21`
     * Version type: Unsupported

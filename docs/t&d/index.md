@@ -7,7 +7,7 @@ icon: material/bookshelf
 
 <div markdown>
 
-!!! example inline "3.0.x"
+!!! success inline "3.0.x"
 
     * 最新版本: `3.0.0`
     * 版本类型: 稳定版本
@@ -27,7 +27,7 @@ icon: material/bookshelf
 
 <div markdown>
 
-!!! success inline "2.6.x"
+!!! failure inline "2.6.x"
 
     * 最新版本: `2.6.21`
     * 版本类型: 不支持版本
