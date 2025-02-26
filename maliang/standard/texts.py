@@ -183,6 +183,7 @@ class SingleLineText(virtual.Text):
         size: tuple[int, int] | None = None,
         *,
         text: str = "",
+        ignore: tuple[str, ...] = ("\n", "\r"),
         limit: int = math.inf,
         limit_width: int = 0,
         show: str | None = None,
@@ -210,6 +211,7 @@ class SingleLineText(virtual.Text):
         * `underline`: wether text is underline
         * `overstrike`: wether text is overstrike
         * `align`: align mode of the text
+        * `ignore`: ignore the input of some characters
         * `limit`: limit on the number of characters
         * `limit_width`: limit on the width of characters
         * `show`: display a value that obscures the original content
@@ -221,6 +223,7 @@ class SingleLineText(virtual.Text):
         self.left: int = 0
         self.right: int = 0
         self.anchor = "w" if align == "left" else "e" if align == "right" else "center"
+        self.ignore = ignore
         self.limit_width = limit_width
         virtual.Text.__init__(
             self, widget, relative_position, size, text=text, limit=limit, show=show,
@@ -292,6 +295,8 @@ class SingleLineText(virtual.Text):
 
     def insert(self, index: int, value: str) -> bool:
         """Insert text to the location of the specified index"""
+        for char in self.ignore:
+            value = value.replace(char, "")
         if not self.text_proxy.length() and value:
             self.widget.master.itemconfigure(self.items[1], fill="")
 

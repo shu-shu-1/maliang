@@ -387,6 +387,7 @@ class InputBox(virtual.Widget):
         align: typing.Literal["left", "right", "center"] = "left",
         placeholder: str = "",
         show: str | None = None,
+        ignore: tuple[str, ...] = ("\n", "\r"),
         limit: int = math.inf,
         limit_width: int = 0,
         image: enhanced.PhotoImage | None = None,
@@ -408,6 +409,7 @@ class InputBox(virtual.Widget):
         * `overstrike`: whether the text is overstrike
         * `align`: align mode of the text
         * `show`: display a value that obscures the original content
+        * `ignore`: ignore the input of some characters
         * `placeholder`: a placeholder for the prompt
         * `limit`: limit on the number of characters
         * `limit_width`: limit on the width of characters
@@ -435,8 +437,9 @@ class InputBox(virtual.Widget):
         if image is not None:
             images.StillImage(self, image=image)
         texts.SingleLineText(
-            self, family=family, fontsize=fontsize, weight=weight, slant=slant, underline=underline,
-            overstrike=overstrike, align=align, limit=limit, limit_width=limit_width, show=show,
+            self, family=family, fontsize=fontsize, weight=weight, slant=slant,
+            underline=underline, overstrike=overstrike, align=align,
+            ignore=ignore, limit=limit, limit_width=limit_width, show=show,
             placeholder=placeholder)
         self.feature = features.InputBoxFeature(self)
 
