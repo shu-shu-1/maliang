@@ -9,7 +9,7 @@ icon: material/bookshelf
 
 !!! success inline "3.0.x"
 
-    * 最新版本: `3.0.0`
+    * 最新版本: `3.0.1`
     * 版本类型: 稳定版本
     * 当前状态: 🟢 <font color="limegreen">持续更新</font>
 

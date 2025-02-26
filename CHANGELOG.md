@@ -12,6 +12,28 @@
 > * 🟠 **Deprecated / 弃用**
 > * 🟤 **Refactored / 重构**
 
+## 🔖 `3.0.1`
+
+🕓 *Release Date / 发布日期 : 2025-02-26*
+
+🟢 **Added / 新增**
+
+* Add initialization parameter `ignore` to the widget `InputBox` to ignore partially inserted characters  
+小部件 `InputBox` 新增初始化参数 `ignore` 来忽略部分插入的字符  
+Issue: [#78](https://github.com/Xiaokang2022/maliang/issues/78)
+
+🟣 **Fixed / 修复**
+
+* Fix a bug where pasting multiple lines of text in the widget `InputBox` would cause the text to overflow  
+修复了在小部件 `InputBox` 中粘贴多行文本会导致文本溢出的 bug  
+Issue: [#78](https://github.com/Xiaokang2022/maliang/issues/78)
+
+* Fix a type hint error  
+修复了一个类型提示错误
+
+* Fixed an issue where the metadata information of the distributed package was incorrect  
+修复了分发包的元数据信息存在错误的问题
+
 ## 🔖 `3.0.0`
 
 🕓 *Release Date / 发布日期 : 2025-01-26*
