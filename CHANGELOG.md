@@ -20,13 +20,13 @@
 
 * Add initialization parameter `ignore` to the widget `InputBox` to ignore partially inserted characters  
 小部件 `InputBox` 新增初始化参数 `ignore` 来忽略部分插入的字符  
-Issue: [#78](https://github.com/Xiaokang2022/maliang/issues/78)
+Issue: <https://github.com/Xiaokang2022/maliang/issues/78>
 
 🟣 **Fixed / 修复**
 
 * Fix a bug where pasting multiple lines of text in the widget `InputBox` would cause the text to overflow  
 修复了在小部件 `InputBox` 中粘贴多行文本会导致文本溢出的 bug  
-Issue: [#78](https://github.com/Xiaokang2022/maliang/issues/78)
+Issue: <https://github.com/Xiaokang2022/maliang/issues/78>
 
 * Fix a type hint error  
 修复了一个类型提示错误
