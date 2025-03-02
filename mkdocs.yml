@@ -332,6 +332,7 @@ nav:
           - 4. Todo List: projects/official/4.md
       - 用户项目:
           - 1. Login2.0: projects/users/1.md
+          - 2. ArkLauncher: projects/users/2.md
 
   - 相关博客:
       - blog/index.md

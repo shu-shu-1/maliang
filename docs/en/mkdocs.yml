@@ -111,6 +111,7 @@ nav:
           - 4. Todo List: projects/official/4.md
       - Users Projects:
           - 1. Login2.0: projects/users/1.md
+          - 2. ArkLauncher: projects/users/2.md
 
   - Videos:
       - videos/index.md
