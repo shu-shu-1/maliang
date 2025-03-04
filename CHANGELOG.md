@@ -12,6 +12,16 @@
 > * 🟠 **Deprecated / 弃用**
 > * 🟤 **Refactored / 重构**
 
+## 🔖 `3.0.2`
+
+🕓 *Release Date / 发布日期 : 2025-03-05*
+
+🟣 **Fixed / 修复**
+
+* `animation.animations.MoveTkWidget` will produce an incorrect displacement for `tkinter` widgets with a parameter `anchor` that is not equal to `"nw"`  
+`animation.animations.MoveTkWidget` 会对参数 `anchor` 不等于 `"nw"` 的 `tkinter` 控件产生错误的位移  
+Issue: <https://github.com/Xiaokang2022/maliang/issues/81>
+
 ## 🔖 `3.0.1`
 
 🕓 *Release Date / 发布日期 : 2025-02-26*
