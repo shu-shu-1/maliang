@@ -21,7 +21,6 @@ __all__ = [
 import collections.abc
 import tkinter
 import typing
-import warnings
 
 from ..color import convert, rgb
 from ..core import configs, containers, virtual
@@ -217,18 +216,20 @@ class MoveTkWidget(Animation):
         * `repeat`: number of repetitions of the animation
         * `repeat_delay`: length of the delay before the animation repeats
         """
-        if not widget.place_info():
-            warnings.warn(
-                "The tkinter widget is not laid out by Place.", UserWarning, 2)
-
         widget.update()
-        x0, y0, dx, dy = widget.winfo_x(), widget.winfo_y(), *offset
 
-        Animation.__init__(
-            self, duration, lambda p: widget.place(x=x0+dx*p, y=y0+dy*p),
-            controller=controller, end=end, fps=fps, repeat=repeat,
-            repeat_delay=repeat_delay,
-        )
+        if info := widget.place_info():
+            x0, y0, dx, dy = int(info["x"]), int(info["y"]), *offset
+            anchor = info["anchor"]
+
+            Animation.__init__(
+                self, duration, lambda p: widget.place(
+                    x=x0+dx*p, y=y0+dy*p, anchor=anchor),
+                controller=controller, end=end, fps=fps, repeat=repeat,
+                repeat_delay=repeat_delay,
+            )
+        else:
+            raise RuntimeError("The tkinter widget is not laid out by Place.")
 
 
 class MoveWidget(Animation):

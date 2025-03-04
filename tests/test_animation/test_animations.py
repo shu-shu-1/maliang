@@ -166,16 +166,20 @@ class TestMoveTkWidget(unittest.TestCase):
         self.widget2.pack()
         self.widget3 = tkinter.Label(self.tk)
         self.widget3.place(x=10, y=10)
+        self.widget4 = tkinter.Label(self.tk)
+        self.widget4.place(x=10, y=10)
+        self.widget4.pack()
 
     def tearDown(self) -> None:
         self.an.stop()
         self.tk.destroy()
 
     def test_init(self) -> None:
-        self.assertWarns(UserWarning, lambda: animations.MoveTkWidget(self.widget, (99, 99), 99))
-        self.assertWarns(UserWarning, lambda: animations.MoveTkWidget(self.widget2, (99, 99), 99))
+        self.assertRaises(RuntimeError, lambda: animations.MoveTkWidget(self.widget, (99, 99), 99))
+        self.assertRaises(RuntimeError, lambda: animations.MoveTkWidget(self.widget2, (99, 99), 99))
         self.an = animations.MoveTkWidget(self.widget3, (99, 99), 99)
         self.an.start()
+        self.assertRaises(RuntimeError, lambda: animations.MoveTkWidget(self.widget4, (99, 99), 99))
 
 
 class TestMoveWidget(unittest.TestCase):
