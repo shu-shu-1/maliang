@@ -208,8 +208,8 @@ class SingleLineText(virtual.Text):
         * `fontsize`: font size
         * `weight`: weight of the font
         * `slant`: slant of the font
-        * `underline`: wether text is underline
-        * `overstrike`: wether text is overstrike
+        * `underline`: whether text is underline
+        * `overstrike`: whether text is overstrike
         * `align`: align mode of the text
         * `ignore`: ignore the input of some characters
         * `limit`: limit on the number of characters
@@ -217,7 +217,7 @@ class SingleLineText(virtual.Text):
         * `show`: display a value that obscures the original content
         * `placeholder`: a placeholder for the prompt
         * `name`: name of element
-        * `gradient_animation`: Wether use animation to change color
+        * `gradient_animation`: whether use animation to change color
         * `kwargs`: extra parameters for CanvasItem
         """
         self.left: int = 0

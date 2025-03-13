@@ -58,7 +58,7 @@ class Smoke(virtual.Image):
         * `size`: size of element
         * `color`: color of the image object of the element
         * `name`: name of element
-        * `animation`: Wether use animation to change color
+        * `animation`: whether use animation to change color
         * `kwargs`: extra parameters for CanvasItem
         """
         if Image is None:

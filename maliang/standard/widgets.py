@@ -73,8 +73,8 @@ class Text(virtual.Widget):
         * `overstrike`: whether the text is overstrike
         * `justify`: justify mode of the text
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -121,8 +121,8 @@ class Image(virtual.Widget):
         * `size`: size of the widget
         * `image`: image of the widget
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -192,8 +192,8 @@ class Label(virtual.Widget):
         * `justify`: justify mode of the text
         * `image`: image of the widget
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -266,8 +266,8 @@ class Button(virtual.Widget):
         * `command`: a function that is triggered when the button is pressed
         * `image`: image of the widget
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -326,8 +326,8 @@ class Switch(virtual.Widget):
         * `command`: a function that is triggered when the switch is changed
         * `image`: image of the widget
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -415,8 +415,8 @@ class InputBox(virtual.Widget):
         * `limit_width`: limit on the width of characters
         * `image`: image of the widget
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -498,8 +498,8 @@ class CheckBox(virtual.Widget):
         * `command`: a function that is triggered when the state of check button is on
         * `image`: image of the widget
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -576,8 +576,8 @@ class ToggleButton(virtual.Widget):
         * `command`: a function that is triggered when the state of check button is on
         * `image`: image of the widget
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -643,8 +643,8 @@ class RadioBox(virtual.Widget):
         * `command`: a function that is triggered when the state of radio button is on
         * `image`: image of the widget
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -726,8 +726,8 @@ class ProgressBar(virtual.Widget):
         * `command`: a function that is triggered when the progress of progress bar is 100%
         * `image`: image of the widget
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -819,8 +819,8 @@ class UnderlineButton(virtual.Widget):
         * `command`: a function that is triggered when the underline button is pressed
         * `image`: image of the widget
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -877,8 +877,8 @@ class HighlightButton(virtual.Widget):
         * `command`: a function that is triggered when the hightlight button is pressed
         * `image`: image of the widget
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -937,8 +937,8 @@ class IconButton(virtual.Widget):
         * `command`: a function that is triggered when the button is pressed
         * `image`: image of the widget
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -997,8 +997,8 @@ class Slider(virtual.Widget):
         * `default`: default value of the widget
         * `command`: a function that is triggered when the button is pressed
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -1094,8 +1094,8 @@ class SegmentedButton(virtual.Widget):
         * `image`: image of the widget
         * `layout`: layout mode of the widget
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -1206,8 +1206,8 @@ class SpinBox(virtual.Widget):
         * `command`: a function that is triggered when the button is pressed
         * `image`: image of the widget
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -1315,8 +1315,8 @@ class OptionButton(virtual.Widget):
         * `image`: image of the widget
         * `anchor`: anchor of the widget
         * `align`: align of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -1438,8 +1438,8 @@ class ComboBox(virtual.Widget):
         * `image`: image of the widget
         * `anchor`: anchor of the widget
         * `align`: align of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -1547,8 +1547,8 @@ class Spinner(virtual.Widget):
         * `widths`: width of the outside ring and inside ring
         * `mode`: mode of the Spinner
         * `anchor`: anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable gradient_animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """
@@ -1640,7 +1640,7 @@ class Tooltip(virtual.Widget):
         * `underline`: whether the text is underline
         * `overstrike`: whether the text is overstrike
         * `justify`: justify mode of the text
-        * `gradient_animation`: wether enable gradient_animation
+        * `gradient_animation`: whether enable gradient_animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """

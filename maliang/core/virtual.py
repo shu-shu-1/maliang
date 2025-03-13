@@ -63,7 +63,7 @@ class Element(abc.ABC):
         * `position`: position relative to its widgets
         * `size`: size of element
         * `name`: name of element
-        * `gradient_animation`: Wether use animation to change color
+        * `gradient_animation`: whether use animation to change color
         * `kwargs`: extra parameters for CanvasItem
         """
         self.widget = widget
@@ -352,13 +352,13 @@ class Text(Element):
         * `fontsize`: font size
         * `weight`: weight of the font
         * `slant`: slant of the font
-        * `underline`: wether text is underline
-        * `overstrike`: wether text is overstrike
+        * `underline`: whether text is underline
+        * `overstrike`: whether text is overstrike
         * `limit`: limit on the number of characters
         * `show`: display a value that obscures the original content
         * `placeholder`: a placeholder for the prompt
         * `name`: name of element
-        * `gradient_animation`: Wether use animation to change color
+        * `gradient_animation`: whether use animation to change color
         * `kwargs`: extra parameters for CanvasItem
         """
         self.text = text
@@ -425,7 +425,7 @@ class Image(Element):
         * `size`: size of element
         * `image`: image object of the element
         * `name`: name of element
-        * `gradient_animation`: Wether use animation to change color
+        * `gradient_animation`: whether use animation to change color
         * `kwargs`: extra parameters for CanvasItem
         """
         self.image = image
@@ -720,8 +720,8 @@ class Widget:
         * `position`: position of the widget
         * `size`: size of the widget
         * `anchor`: layout anchor of the widget
-        * `capture_events`: wether detect another widget under the widget
-        * `gradient_animation`: wether enable animation
+        * `capture_events`: whether detect another widget under the widget
+        * `gradient_animation`: whether enable animation
         * `auto_update`: whether the theme manager update it automatically
         * `style`: style of the widget
         """

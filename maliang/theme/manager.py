@@ -194,10 +194,10 @@ def customize_window(
     * `border_color`: border color of the window
     * `header_color`: header color of the window
     * `title_color`: title color of the window
-    * `hide_title_bar`: Wether hide the whole title bar
-    * `hide_button`: Wether hide part of buttons on title bar
-    * `disable_minimize_button`: Wether disable minimize button
-    * `disable_maximize_button`: Wether disable maximize button
+    * `hide_title_bar`: whether hide the whole title bar
+    * `hide_button`: whether hide part of buttons on title bar
+    * `disable_minimize_button`: whether disable minimize button
+    * `disable_maximize_button`: whether disable maximize button
     * `border_type`: border type of the window
 
     This function is only works on Windows OS! And some parameters are useless

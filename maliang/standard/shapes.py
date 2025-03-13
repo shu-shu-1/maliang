@@ -44,7 +44,7 @@ class Line(virtual.Shape):
         * `size`: size of element
         * `points`: key points of line
         * `name`: name of element
-        * `gradient_animation`: Wether use animation to change color
+        * `gradient_animation`: whether use animation to change color
         * `kwargs`: extra parameters for CanvasItem
         """
         self.points = [] if points is None else points
@@ -163,7 +163,7 @@ class RegularPolygon(virtual.Shape):
         * `side`: number of sides of a regular polygon
         * `angle`: number of radians of a regular polygon rotated clockwise
         * `name`: name of element
-        * `gradient_animation`: Wether use animation to change color
+        * `gradient_animation`: whether use animation to change color
         * `kwargs`: extra parameters for CanvasItem
         """
         self.side = side
@@ -219,7 +219,7 @@ class RoundedRectangle(virtual.Shape):
         * `size`: size of element
         * `radius`: radius of the fillet
         * `name`: name of element
-        * `gradient_animation`: Wether use animation to change color
+        * `gradient_animation`: whether use animation to change color
         * `kwargs`: extra parameters for CanvasItem
         """
         self.radius = radius
@@ -319,7 +319,7 @@ class HalfRoundedRectangle(virtual.Shape):
         * `radius`: radius of the fillet
         * `ignore`: edges to ignore
         * `name`: name of element
-        * `gradient_animation`: Wether use animation to change color
+        * `gradient_animation`: whether use animation to change color
         * `kwargs`: extra parameters for CanvasItem
         """
         self.radius = radius
@@ -495,7 +495,7 @@ class SharpRectangle(virtual.Shape):
         * `theta`: number of radians of sharp corners
         * `ratio`: height ratio of the left and right sharp corners
         * `name`: name of element
-        * `gradient_animation`: Wether use animation to change color
+        * `gradient_animation`: whether use animation to change color
         * `kwargs`: extra parameters for CanvasItem
         """
         self.theta = theta
@@ -567,7 +567,7 @@ class Parallelogram(virtual.Shape):
         * `size`: size of element
         * `theta`: number of radians that the parallelogram is inclined to
         * `name`: name of element
-        * `gradient_animation`: Wether use animation to change color
+        * `gradient_animation`: whether use animation to change color
         * `kwargs`: extra parameters for CanvasItem
         """
         self.theta = theta

@@ -177,8 +177,8 @@ class Tk(tkinter.Tk, Misc):
         """Change the color theme of the window
 
         * `value`: theme name
-        * `include_children`: wether include its children, like Toplevel
-        * `include_canvases`: wether include its canvases
+        * `include_children`: whether include its children, like Toplevel
+        * `include_canvases`: whether include its canvases
         """
         self.update()
         self.configure(bg=getattr(self, value)["bg"])
