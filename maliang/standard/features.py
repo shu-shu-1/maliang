@@ -491,6 +491,6 @@ class SpinBoxFeature(virtual.Feature):
             self.command = self.widget.change
 
     def _mouse_wheel(self, event: tkinter.Event) -> bool:
-        if flag := self.widget.widgets[0].state == "active":
+        if flag := self.widget.children[0].state == "active":
             self.command(event.delta > 0)
         return flag

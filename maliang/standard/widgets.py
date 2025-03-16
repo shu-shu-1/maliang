@@ -1151,7 +1151,7 @@ class SegmentedButton(virtual.Widget):
         """Activate the child toggle button for the specified index"""
         if callback and self.command:
             self.command(value)
-        for i, widget in enumerate(self.widgets):
+        for i, widget in enumerate(self.children):
             widget.set(i == value)
         self.value = value
 
@@ -1239,36 +1239,36 @@ class SpinBox(virtual.Widget):
 
     def change(self, up: bool) -> None:
         """Try change the current value"""
-        if not (value := self.widgets[0].get()):
-            return self.widgets[0].set(("%"+self.format) % 0)
+        if not (value := self.children[0].get()):
+            return self.children[0].set(("%"+self.format) % 0)
         try:
             value = float(value) + (self.step if up else -self.step)
             if math.isclose(value, int_value := int(value)):
                 value = int_value
-            self.widgets[0].set(("%"+self.format) % value)
+            self.children[0].set(("%"+self.format) % value)
         except ValueError:
             pass
         return None
 
     def get(self) -> str:
         """Get the value of the Entry"""
-        return self.widgets[0].get()
+        return self.children[0].get()
 
     def set(self, value: str) -> None:
         """Set the text value of the Entry"""
-        self.widgets[0].set(value)
+        self.children[0].set(value)
 
     def append(self, value: str) -> None:
         """Append text to Entry"""
-        self.widgets[0].append(value)
+        self.children[0].append(value)
 
     def delete(self, count: int) -> None:
         """Delete a specified amount of text"""
-        self.widgets[0].delete(count)
+        self.children[0].delete(count)
 
     def clear(self) -> None:
         """Clear the text value of the Entry"""
-        self.widgets[0].clear()
+        self.children[0].clear()
 
 
 class OptionButton(virtual.Widget):
@@ -1366,7 +1366,7 @@ class OptionButton(virtual.Widget):
         for element in self._segmented_button.elements:
             for item in element.items:
                 self.master.lift(item)
-        for widget in self._segmented_button.widgets:
+        for widget in self._segmented_button.children:
             self.master.widgets.remove(widget)
             self.master.widgets.append(widget)
             for element in widget.elements:
@@ -1491,7 +1491,7 @@ class ComboBox(virtual.Widget):
         for element in self._segmented_button.elements:
             for item in element.items:
                 self.master.lift(item)
-        for widget in self._segmented_button.widgets:
+        for widget in self._segmented_button.children:
             self.master.widgets.remove(widget)
             self.master.widgets.append(widget)
             for element in widget.elements:

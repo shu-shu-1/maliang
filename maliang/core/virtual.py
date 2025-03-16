@@ -776,6 +776,11 @@ class Widget:
         return tuple(self.shapes + self.texts + self.images)
 
     @property
+    def children(self) -> tuple[Widget, ...]:
+        """Return all child widgets of the widget."""
+        return tuple(self.widgets)
+
+    @property
     def nested(self) -> bool:
         """Whether the widget is a nested widget."""
         return self.widget is not None
@@ -846,7 +851,7 @@ class Widget:
             gradient_animation = self.gradient_animation
 
         if nested:
-            for widget in self.widgets:
+            for widget in self.children:
                 widget.update(state, gradient_animation=gradient_animation)
 
         for element in self.elements:
@@ -977,7 +982,7 @@ class Widget:
         else:
             self.state_before_disabled, last_state = "", self.state_before_disabled
             self.update(last_state, gradient_animation=True, nested=False)
-        for widget in self.widgets:
+        for widget in self.children:
             widget.disable(value)
 
     def forget(self, value: bool = True, /) -> None:
@@ -987,7 +992,7 @@ class Widget:
         """
         self.disappeared = value
 
-        for widget in self.widgets:
+        for widget in self.children:
             widget.forget(value)
 
         for element in self.elements:
@@ -1001,7 +1006,7 @@ class Widget:
         """
         self.position = self.position[0]+dx, self.position[1]+dy
 
-        for widget in self.widgets:
+        for widget in self.children:
             widget.move(dx, dy)
 
         for element in self.elements:
@@ -1024,7 +1029,7 @@ class Widget:
         if self.widget is not None:
             self.widget.widgets.remove(self)
 
-        for widget in tuple(self.widgets):
+        for widget in self.children:
             widget.destroy()
 
         for element in self.elements:
@@ -1067,7 +1072,7 @@ class Widget:
         if zoom_position:
             self.position = self.position[0]*ratios[0], self.position[1]*ratios[1]
 
-        for widget in self.widgets:
+        for widget in self.children:
             widget.zoom(
                 ratios, zoom_position=zoom_position, zoom_size=zoom_size)
 
