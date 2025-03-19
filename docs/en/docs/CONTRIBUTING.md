@@ -59,8 +59,8 @@ If you have any suggestions, etc., you can start a discussion in the discussion 
 
 We set up Lint and Test for all submissions. Lint require that your code must have no major errors (such as syntax errors) and that your code must be rated greater than 9.0. Test require your code to pass without too many errors.
 
-* Lint: [pylint](https://github.com/pylint-dev/pylint)
-* Test: [pytest](https://github.com/pytest-dev/pytest)
+* Lint: <https://github.com/pylint-dev/pylint>
+* Test: <https://github.com/pytest-dev/pytest>
 
 ### 2️⃣ Code Style
 
@@ -74,7 +74,7 @@ For other content, such as issues, we don't make any stylistic requirements.
 
 If you would like to join the project team, please contact the maintainers of the project team, here is some information about the authors of this project:
 
-* 😆 Author: <https://github.com/Xiaokang2022>
+* 😆 Author: @Xiaokang2022
 * ✉️ Email: <2951256653@qq.com>
 
 ---

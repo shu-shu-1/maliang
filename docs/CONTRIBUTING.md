@@ -59,8 +59,8 @@ icon: material/clipboard-text
 
 我们对所有的提交都设置了检查和测试。检查要求你的代码不能存在重大错误（如语法错误等），且代码的评分必须大于 9.0 分。测试要求你的代码能通过，不会产生过多的错误。
 
-* Lint: [pylint](https://github.com/pylint-dev/pylint)
-* Test: [pytest](https://github.com/pytest-dev/pytest)
+* Lint: <https://github.com/pylint-dev/pylint>
+* Test: <https://github.com/pytest-dev/pytest>
 
 ### 2️⃣ 代码风格
 
@@ -74,7 +74,7 @@ icon: material/clipboard-text
 
 如果你想加入项目团队，请联系项目团队的维护人员，下面是本项目作者的一些信息：
 
-* 😆 作者: <https://github.com/Xiaokang2022>
+* 😆 作者: @Xiaokang2022
 * ✉️ 邮箱: <2951256653@qq.com>
 
 ---
