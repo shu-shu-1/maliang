@@ -1458,7 +1458,7 @@ class ComboBox(virtual.Widget):
             underline=underline, overstrike=overstrike, anchor=anchor, limit_width=-h)
         self._button = Button(
             self, (size[0]-h-5-self.offset[0], 5-self.offset[1]), (h, h), text="▼",
-            command=self._open_options)
+            command=lambda: self._open_options() if self._segmented_button.disappeared else self._close_options())
         self._segmented_button = SegmentedButton(
             self, self._get_position(align), (size,)*len(text), text=text, family=family,
             fontsize=fontsize, weight=weight, slant=slant, underline=underline,
