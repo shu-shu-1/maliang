@@ -12,6 +12,28 @@
 > * 🟠 **Deprecated / 弃用**
 > * 🟤 **Refactored / 重构**
 
+## 🔖 `3.0.3`
+
+🕓 *Release Date / 发布日期 : 2025-03-20*
+
+🟢 **Added / 新增**
+
+* Add a read-only property `children` to virtual widget class `Widget` to access its child widgets  
+增加了一个只读的属性 `children` 给虚拟控件类 `Widget` 来访问它的子控件
+
+* Add a basic class `TkFileChooser` to accommodate module `tkinter`  
+增加了一个基础的类 `TkFileChooser` 来适配模块 `tkinter`  
+Pull Request: #82 Contributor: @3190
+
+🟣 **Fixed / 修复**
+
+* Fix the bug that the `ComboBox` widget can not close the selection box without selecting it after clicking to open it  
+修复了控件 `ComboBox` 在点击打开选项列表后不选中选择框就无法关闭的 bug  
+Issue: #87 Pull Request: #89 Contributor: @shu-shu-1
+
+* Fix some typos  
+修正了一些错字
+
 ## 🔖 `3.0.2`
 
 🕓 *Release Date / 发布日期 : 2025-03-05*
@@ -20,7 +42,7 @@
 
 * `animation.animations.MoveTkWidget` will produce an incorrect displacement for `tkinter` widgets with a parameter `anchor` that is not equal to `"nw"`  
 `animation.animations.MoveTkWidget` 会对参数 `anchor` 不等于 `"nw"` 的 `tkinter` 控件产生错误的位移  
-Issue: <https://github.com/Xiaokang2022/maliang/issues/81>
+Issue: #81
 
 ## 🔖 `3.0.1`
 
@@ -29,14 +51,14 @@ Issue: <https://github.com/Xiaokang2022/maliang/issues/81>
 🟢 **Added / 新增**
 
 * Add initialization parameter `ignore` to the widget `InputBox` to ignore partially inserted characters  
-小部件 `InputBox` 新增初始化参数 `ignore` 来忽略部分插入的字符  
-Issue: <https://github.com/Xiaokang2022/maliang/issues/78>
+控件 `InputBox` 新增初始化参数 `ignore` 来忽略部分插入的字符  
+Issue: #78
 
 🟣 **Fixed / 修复**
 
 * Fix a bug where pasting multiple lines of text in the widget `InputBox` would cause the text to overflow  
-修复了在小部件 `InputBox` 中粘贴多行文本会导致文本溢出的 bug  
-Issue: <https://github.com/Xiaokang2022/maliang/issues/78>
+修复了在控件 `InputBox` 中粘贴多行文本会导致文本溢出的 bug  
+Issue: #78
 
 * Fix a type hint error  
 修复了一个类型提示错误
@@ -57,7 +79,8 @@ Issue: <https://github.com/Xiaokang2022/maliang/issues/78>
 新参数 `auto_detect` 已添加到控件的方法 `bind` 中，以确定是否自动检查决策的位置
 
 * Add methods `modified` and `transparent` to class `Tk`  
-给类 `Tk` 增加了方法 `modified` 和 `transparent`
+给类 `Tk` 增加了方法 `modified` 和 `transparent`  
+Pull Request: #65 Contributor: @CodeCrafter-TL
 
 🟣 **Fixed / 修复**
 
@@ -117,7 +140,7 @@ Issue: <https://github.com/Xiaokang2022/maliang/issues/78>
 函数 `apply_theme` 新增配置选项 `"acrylic2"`
 
 * `Canvas` now supports automatic get the default master  
-`Canvas` 现在可以自动获取默认的父部件了
+`Canvas` 现在可以自动获取默认的父控件了
 
 * Now can specify the style to modify a theme  
 现在修改单个控件的主题时可以指定某个主题了  
